@@ -5,5 +5,7 @@ Hannah Codeigniter Starter Kit, Merupakan starter kita yang saya gunakan untuk p
 
 base controller dan model saya ambil dari miliknya jamierumbelow dengan sedikit modifikasi seuai kebutuhan
 
+Untuk template saya menggunakan bootstrap
+
 
 
