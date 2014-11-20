@@ -78,26 +78,26 @@ class MY_Controller extends CI_Controller
      * through to the appropriate action. Support custom 404 methods and
      * autoload the view into the layout.
      */
-    public function _remap($method)
-    {
-        if (method_exists($this, $method))
-        {
-            call_user_func_array(array($this, $method), array_slice($this->uri->rsegments, 2));
-        }
-        else
-        {
-            if (method_exists($this, '_404'))
-            {
-                call_user_func_array(array($this, '_404'), array($method));
-            }
-            else
-            {
-                show_404(strtolower(get_class($this)).'/'.$method);
-            }
-        }
+    // public function _remap($method)
+    // {
+    //     if (method_exists($this, $method))
+    //     {
+    //         call_user_func_array(array($this, $method), array_slice($this->uri->rsegments, 2));
+    //     }
+    //     else
+    //     {
+    //         if (method_exists($this, '_404'))
+    //         {
+    //             call_user_func_array(array($this, '_404'), array($method));
+    //         }
+    //         else
+    //         {
+    //             show_404(strtolower(get_class($this)).'/'.$method);
+    //         }
+    //     }
 
-        $this->_load_view();
-    }
+    //     $this->_load_view();
+    // }
 
     /**
      * Automatically load the view, allowing the developer to override if
